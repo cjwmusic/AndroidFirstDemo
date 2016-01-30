@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mainTextView.setText("Wu Kong come to Android Studio~");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,8 +52,18 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_settings_item1) {
+            System.out.println("action_settings_item1");
+            return true;
+        }
+
+        if (id == R.id.action_settings_item2) {
+            System.out.println("action_settings_item2");
+            return true;
+        }
+
+        if (id == R.id.action_settings_item3) {
+            System.out.println("action_settings_item3");
             return true;
         }
 
