@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,10 +18,14 @@ public class MainActivity extends AppCompatActivity {
         //设置布局文件
         setContentView(R.layout.activity_main);
 
-
+        //toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //MainTextView
+        TextView mainTextView = (TextView)findViewById(R.id.mainTextView);
+
+        mainTextView.setText("Wu Kong come to Android Studio~");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
